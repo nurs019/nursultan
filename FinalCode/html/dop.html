@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="pictures/nxoUIlO8UDhIdNTTMMB2n75llA8__o3DGI_bpuiLUNw_VQRWfkALaoF1Itb2feA8iKzAjIVJccAzuBfxfVEIz3F2 (1).png" type="image/png" />
+  <title>Language Courses</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="../js/script.js"></script>
+  <script src="https://kit.fontawesome.com/eca852dc4e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-W6DoySR+8Flv6Wy0c3qyJduGwCU8kEC0JHcbpuiLUNw_VQRWfkALaoF1Itb2feA8iKzAjIVJccAzuBfxfVEIz3F2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-3hBCVFTiZfzTpJMuQzCtev/1RKN8N+M0iR1eZAcU+Y//d4dOZJo2IMt2/2G7zoHlp+0aw2qLO6Mf+XTs1JDeVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-body {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      transform: translateY(100%);
+      transition: transform 0.3s;
+    }
+
+    .card:hover .card-body {
+      transform: translateY(0);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      display: block;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a href="../index.html" class="link">
+        <h3 class="log">Kazakhstan</h3>
+        <img class="icon" src="../assets/pictures/kazakhstan-flag.jpg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item upper">
+            <a class="link" href="../html/founding heroes.html">Founding heroes</a>
+          </li>
+          <li class="nav-item upper">
+            <a class="link" href="../html/presidents.html">Presidents</a>
+          </li>
+          <li class="nav-item upper">
+            <a class="link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav-item upper">
+            <a class="link" href="../html/dop.html">Quiz</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="quiz-container">
+    <div id="event-info"></div>
+
+    <!-- Quiz content goes here -->
+
+    <form id="quiz-form">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. What is the capital city of Kazakhstan?</p>
+        <label>
+          <input type="radio" name="q1" value="Almaty"> Almaty
+        </label>
+        <label>
+          <input type="radio" name="q1" value="Astana"> Astana
+        </label>
+        <label>
+          <input type="radio" name="q1" value="Nur-Sultan"> Nur-Sultan
+        </label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. Which river is the longest in Kazakhstan?</p>
+        <label>
+          <input type="radio" name="q2" value="Ili"> Ili
+        </label>
+        <label>
+          <input type="radio" name="q2" value="Syr Darya"> Syr Darya
+        </label>
+        <label>
+          <input type="radio" name="q2" value="Irtysh"> Irtysh
+        </label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. In what year did Kazakhstan gain independence?</p>
+        <label>
+          <input type="radio" name="q3" value="1991"> 1991
+        </label>
+        <label>
+          <input type="radio" name="q3" value="1985"> 1985
+        </label>
+        <label>
+          <input type="radio" name="q3" value="2000"> 2000
+        </label>
+      </div>
+
+
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. Which mountain range is located in southeastern Kazakhstan?</p>
+        <label>
+          <input type="radio" name="q4" value="Tian Shan"> Tian Shan
+        </label>
+        <label>
+          <input type="radio" name="q4" value="Altai Mountains"> Altai Mountains
+        </label>
+        <label>
+          <input type="radio" name="q4" value="Ural Mountains"> Ural Mountains
+        </label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. What is the official language of Kazakhstan?</p>
+        <label>
+          <input type="radio" name="q5" value="Kazakh"> Kazakh
+        </label>
+        <label>
+          <input type="radio" name="q5" value="Russian"> Russian
+        </label>
+        <label>
+          <input type="radio" name="q5" value="Both Kazakh and Russian"> Both Kazakh and Russian
+        </label>
+      </div>
+
+      <button type="button" onclick="gradeQuiz()">Submit</button>
+    </form>
+    <div id="result-container"></div>
+  </div>
+
+  <footer id="contacts">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-4 col-xl-3">
+          <h4>Contact Us:</h4>
+          <h6>Phone number: +123456</h6>
+          <h6>Address: Some Place Avenue</h6>
+          <img><span></span>
+        </div>
+        <div class="col-12 col-lg-8 col-xl-9" id="footer">
+          <a class="social" href="https://www.instagram.com/preply"><img class="icon" src="../assets/icons/instagram.webp" alt="instagram"><span class="text">Instagram</span></a>
+          <a class="social" href="https://www.facebook.com/preply/"><img class="icon" src="../assets/icons/facebook.webp" alt="facebook"><span class="text">Facebook</span></a>
+          <a class="social" href="https://www.youtube.com/user/preplysite"><img class="icon" src="../assets/icons/youtube.webp" alt="youtube"><span class="text">YouTube</span></a>
+          <a class="social" href="https://www.linkedin.com/company/preply/"><img class="icon" src="../assets/icons/linkedin.webp" alt="linkedin"><span class="text">Linkedin</span></a>
+          <a class="social" href="https://www.tiktok.com/@preplyglobal"><img class="icon" src="../assets/icons/tiktok.webp" alt="tiktok"><span class="text">TikTok</span></a>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2023 Language Courses</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+  <script>
+
+
+
+
+    // Добавляем event listener для keydown
+    document.addEventListener('keydown', function (event) {
+      var element = document.querySelector('#quiz-container');
+      
+      element.style.transition = 'none';
+      element.style.transform = 'scale(1.1)';
+  
+      setTimeout(function () {
+        element.style.transition = 'transform 0.3s ease';
+        element.style.transform = 'scale(1)';
+      }, 10);
+    });
+    // Находим элемент кнопки
+var testButton = document.querySelector('.but');
+
+// Добавляем обработчик события для mouseover
+testButton.addEventListener('mouseover', function() {
+  // Изменяем стили при наведении
+  testButton.style.backgroundColor = 'green';
+  testButton.style.color = 'white';
+});
+
+// Добавляем обработчик события для mouseout (когда курсор покидает элемент)
+testButton.addEventListener('mouseout', function() {
+  // Возвращаем исходные стили
+  testButton.style.backgroundColor = '';
+  testButton.style.color = '';
+});
+
+  </script>
+  
+  
+  
+</body>
+
+</html>
